@@ -1,5 +1,4 @@
-Python 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)] on win32
-Enter "help" below or click "Help" above for more information.
+
 import tkinter as tk
 from tkinter import messagebox
 
@@ -76,42 +75,41 @@ entEmail = tk.Entry(lblFrPerson)
 entEmail.grid(column=1, row=2, padx=5, pady=5)
 
 lblPhone = tk.Label(lblFrPerson, text="Phone:")
-... lblPhone.grid(column=0, row=3, padx=5, pady=5, sticky="e")
-... 
-... entPhone = tk.Entry(lblFrPerson)
-... entPhone.grid(column=1, row=3, padx=5, pady=5)
-... 
-... 
-... # Buttons Frame
-... 
-... fraButtons = tk.Frame(root)
-... fraButtons.pack(pady=10)
-... 
-... btnS = tk.Button(
-...     fraButtons,
-...     text="Submit",
-...     width=5,
-...     command=displayData
-... )
-... btnS.pack(side=tk.LEFT, padx=5)
-... 
-... btnR = tk.Button(
-...     fraButtons,
-...     text="Reset",
-...     width=5,
-...     command=clear
-... )
-... btnR.pack(side=tk.LEFT, padx=5)
-... 
-... btnQ = tk.Button(
-...     fraButtons,
-...     text="Quit",
-...     width=5,
-...     command=root.destroy
-... )
-... btnQ.pack(side=tk.LEFT, padx=5)
-... 
-... 
-... # Run App
-... 
-... root.mainloop()
+lblPhone.grid(column=0, row=3, padx=5, pady=5, sticky="e")
+ 
+entPhone = tk.Entry(lblFrPerson)
+entPhone.grid(column=1, row=3, padx=5, pady=5)
+
+# Buttons Frame
+
+fraButtons = tk.Frame(root)
+fraButtons.pack(pady=10)
+ 
+btnS = tk.Button(
+     fraButtons,
+     text="Submit",
+     width=5,
+     command=displayData
+ )
+btnS.pack(side=tk.LEFT, padx=5)
+ 
+btnR = tk.Button(
+     fraButtons,
+     text="Reset",
+     width=5,
+     command=clear
+ )
+btnR.pack(side=tk.LEFT, padx=5)
+ 
+btnQ = tk.Button(
+     fraButtons,
+     text="Quit",
+     width=5,
+     command=root.destroy
+ )
+btnQ.pack(side=tk.LEFT, padx=5)
+ 
+ 
+# Run App
+ 
+root.mainloop()
